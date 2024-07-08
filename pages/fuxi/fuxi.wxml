@@ -1,0 +1,5 @@
+<block wx:for="{{bookList}}">
+
+<navigator class="new-book" url="/pages/fuxi/detail/detail?id={{item._id}}">{{item.name}}</navigator>
+
+</block>

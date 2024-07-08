@@ -1,0 +1,12 @@
+.word {
+  margin: 30rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 40rpx;
+  padding-bottom: 30rpx;
+}
+
+.note {
+  margin: 30rpx 30rpx;
+  background-color: #eee;
+  padding: 30rpx 20rpx;
+}

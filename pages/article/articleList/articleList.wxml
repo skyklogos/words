@@ -1,0 +1,15 @@
+
+
+
+<block wx:for="{{articleList}}">
+
+  <navigator class="cover-wrap" url="/pages/article/articleDetail/articleDetail?id={{item._id}}">
+    <image class="cover" src="{{item.cover}}"></image>
+    <view class="title">{{item.title}}</view>
+  </navigator>
+ 
+
+</block>
+
+
+

@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/book/book",
+    "pages/book/newBook/newBook",
+    "pages/book/bookDetail/bookDetail",
+    "pages/book/wordDetail/wordDetail",
+    "pages/article/article",
+    "pages/me/userInfo/userInfo",
+
+    "pages/article/articleList/articleList",
+    "pages/article/articleDetail/articleDetail",
+    "pages/me/myCollect/myCollect",
+    "pages/book/search/search",
+    "pages/wordDetail/wordDetail",
+    "pages/me/mySubscribe/mySubscribe",
+    "pages/me/myHistory/myHistory",
+    "pages/index/addBook/addBook",
+    "pages/me/feedback/feedback",
+    "pages/book/bookSearch/bookSearch",
+    "pages/fuxi/fuxi",
+    "pages/fuxi/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00CCCC",
+    "navigationBarTitleText": "词典",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "weui": true
+},
+  "tabBar": {
+    "color": "#616161",
+    "selectedColor": "#2E312F",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_yes.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "生词本",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book_yes.png"
+      },
+      {
+        "pagePath": "pages/fuxi/fuxi",
+        "text": "复习",
+        "iconPath": "images/fuxi_no.png",
+        "selectedIconPath": "images/fuxi_yes.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "外刊",
+        "iconPath": "images/wk_no.png",
+        "selectedIconPath": "images/wk_yes.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode_yes.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+
+
+
+<view class="title">{{article.title}}</view>
+<view class="but" >
+  <button wx:if="{{isCollected==false}}" bindtap="collect" type="primary" size="mini">收藏</button>
+  <button wx:if="{{isCollected}}" bindtap="cancelCollect" type="primary" size="mini">取消收藏</button>
+</view>
+
+<view class="rich"><rich-text  nodes="{{article.detail}}"></rich-text>
+</view>
+
+
+<view class="title2">核心词汇</view>
+
+<view class="words-wrap">
+<block wx:for="{{article.words}}">
+  <navigator class="erery-word" url="/pages/wordDetail/wordDetail?word={{item}}">
+    {{item}}
+  </navigator>
+
+</block>
+
+</view>
+
+
+<view style="height: 100rpx;"></view>

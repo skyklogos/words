@@ -1,0 +1,13 @@
+
+
+
+
+  <block wx:for="{{typeList}}">
+    <view class="flex-wrap">
+      <navigator class="title" url="/pages/article/articleList/articleList?id={{item._id}}">{{item.name}}</navigator>
+      <view class="subscribe" bindtap="subscribe" data-index="{{index}}">订阅</view>
+    </view>
+  </block>
+
+
+

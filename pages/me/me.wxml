@@ -1,0 +1,31 @@
+<view class="user-info">
+  <view wx:if="{{userInfo}}"><image src="{{userInfo.avatarUrl}}" bindtap="previewImg"></image></view>
+  <view wx:if="{{!userInfo}}"><image src="/images/wode.png"></image></view>
+  <view class="nickname">{{userInfo.nickName}}</view>
+  <view class="nickname" wx:if="{{userInfo.school}}">{{userInfo.school}}</view>
+  <button wx:if="{{!userInfo}}" bindtap="getUserProfile" class="login-but">登录</button>
+ 
+</view>
+
+
+<view class="menu-cell" wx:if="{{userInfo}}" bindtap="toUserInfo">
+  个人信息
+</view>
+<view class="menu-cell" wx:if="{{userInfo}}" bindtap="toCollect">
+  我的收藏
+</view>
+<view class="menu-cell" wx:if="{{userInfo}}" bindtap="toSubscribe">
+  我的订阅
+</view>
+
+<view class="menu-cell" wx:if="{{userInfo}}" bindtap="toHistory">
+  我的记录
+</view>
+
+<view class="menu-cell" bindtap="feedback">
+  意见反馈
+</view>
+
+<view class="menu-cell" wx:if="{{userInfo}}" bindtap="loginOut">
+  退出登录
+</view>

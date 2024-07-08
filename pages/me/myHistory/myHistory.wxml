@@ -1,0 +1,25 @@
+
+
+
+<block wx:for="{{history}}">
+
+
+  <navigator class="word" url="/pages/wordDetail/wordDetail?word={{item}}">{{item}}</navigator>
+
+
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

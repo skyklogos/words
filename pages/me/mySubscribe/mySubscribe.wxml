@@ -1,0 +1,16 @@
+
+<block wx:for="{{bookList}}">
+  <view class="good-box" bindtap="toGoodDetail" data-index="{{index}}">
+    <!-- <image src="{{item.cover}}" class="good-img"></image> -->
+
+    <view class="right-box">
+      <view>{{item.name}}</view>
+      <!-- <view class="price">进入详情</view> -->
+      <view class="right-bottom-box">
+        <view class="tag" catchtap="delete" data-index="{{index}}">删除</view>
+        <view class="price">进入期刊</view>
+      </view>
+    </view>
+
+  </view>
+</block>

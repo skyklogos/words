@@ -1,0 +1,43 @@
+
+<!-- <view class="search-wrap" bindtap="toSearch">
+  <view class="search-box">
+
+    <input bindinput="getValue" type="text" placeholder="请输入关键词" class="input-cell"/>
+    <image src="/images/search.png" class="search-img" bindtap="search"></image>
+
+  </view>
+</view> -->
+
+
+<view class="note">{{book.note}}</view>
+
+<view style="margin: 40rpx; text-align: center;">本次复习单词个数：{{bookList.length}}个</view>
+
+<view class="dc">{{bookList[currentIndex].word.query}}</view>
+
+
+<block wx:for="{{bookListRandom}}">
+
+
+  <view class="xx" bindtap="chooseFalse">选项{{index+1}}：{{item.word.translation[0]}}</view>
+  <view class="xx" bindtap="chooseTrue" wx:if="{{currentIndex%4==index}}">选项{{index+1}}：{{bookList[currentIndex].word.translation[0]}}</view>
+
+</block>
+
+
+<button type="primary" bindtap="next">下一个</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
